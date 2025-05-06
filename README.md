@@ -36,7 +36,7 @@ O projeto tem como objetivo apresentar a identidade visual do restaurante, criar
 ## 📁 Estrutura de Pastas
 
 ```
-cowboy-da-costela/
+restaurante-projeto/
 ├── index.html
 ├── style.css
 ├── script.js
@@ -61,7 +61,7 @@ cowboy-da-costela/
 
 1. Clone o repositório ou baixe os arquivos:
    ```bash
-   git clone https://github.com/seu-usuario/cowboy-da-costela.git
+   git clone https://github.com/Caiodiv/restaurante-projeto.git
    ```
 
 2. Abra o `index.html` no seu navegador.
