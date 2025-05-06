@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'cowboy';
+  src: url(./fontes/RioGrande.ttf) format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chic';
+  src: url('./fontes/Lofty Chic Demo.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'moderno';
+  src: url('./fontes/Rolanda.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'costela';
+  src: url('./fontes/Cowboy Movie.ttf') format('truetype');
+
+}
+
+body {
+  font-family: 'chiq';
+  background-color: #fff;
+  color: #333;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('./images/sl_0210121_40570_43.jpg');
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header.scrolled-header {
+  background-color: #111;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 5px 0;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #f8d49d;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #f8d49d;
+}
+
+.hero {
+  background-image: url('./images/sl_0210121_40570_43.jpg');
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+#cardapio {
+  margin-top: 20px;
+  background-image: url('./images/marmore2.jpg');
+  box-shadow: 1px 1px 3rem darkgoldenrod;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.icon-box {
+  width: 200px;
+}
+
+.icon-box img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fcfcfc;
+  font-size: 28px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f8d49d;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-family: 'costela';
+  font-size: 64px;
+  color: #ffffff;
+  letter-spacing: 9px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+  font-family: 'chic';
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#contato {
+  font-family: 'moderno';
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.about {
+  background-image: url('./images/marmore2.jpg');
+  color: #3b2f2f;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: 'Rye', serif;
+  color: #000000;
+}
+
+.about-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#logoFix {
+  position: relative;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+#logoFix.scrolled {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  transform: scale(0.5);
+  z-index: 1000;
+}
+
+#logoFix.scrolled h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0px 0px -125px -32px;
+}
+
+#logoFix.scrolled p,
+#logoFix.scrolled .social-icons {
+  display: none;
+}
+
+nav img {
+  width: 30px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.btn-ifood {
+  background-color: #e53935;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  margin: -8px 0px 0px 0px;
+}
+
+.btn-ifood:hover {
+  background-color: #c62828;
+}
+
+.ifood-icon {
+  width: 24px;
+  height: auto;
+}
+
+footer {
+  background-image: url('./images/5459923.jpg');
+}
